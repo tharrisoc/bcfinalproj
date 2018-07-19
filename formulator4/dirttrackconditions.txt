@@ -1,0 +1,85 @@
+fr	Frozen	You see frozen track surfaces from time to time at wintertime racetracks.\
+A main track has between 4 and 6 inches of cushion atop the base. In the\
+winter, moisture can seep into the cushion and freeze up if the track\
+superintendent isn't careful. \
+\
+Frozen tracks usually promote the speed horses.\
+\
+As a result of sustained low temperatures, ice particles have formed on\
+the racing surface.
+fst	Fast	The strip is dry and the footing firm. It may be so dry that the watering\
+trucks sprinkle it several times during the program. The track's effects\
+on horses with early speed may vary. At tracks that usually favor quick\
+starts, the first 'fast' day after a siege of rain and a period of drying\
+out may produce a situation in which speed horses do less than expected\
+during the early races but begin to recover their normal advantage later\
+in the program\
+\
+Fast is defined as a dirt track in optimum condition, level with just the\
+right amount of moisture.\
+\
+Completely dry and at optimal efficiency.
+gd	Good	Wetter than wet-fast, but not as wet as muddy or sloppy. Often describes\
+a track no longer fast but on the way to sloppy under prolonged, light rain.\
+The description also appears during the drying out process from muddy to slow\
+to good to fast. After heavy rain in New York, it is taken for granted that\
+"good" can mean bad. The track-drainage systems on that circuit are so \
+extremely efficient and the racing cushions so full of sand that an amount \
+of moisture waranting the description of "good" may indicate overloaded\
+drains, a softened base, and a drying track that tires front-runners.\
+\
+Good is the next rating down from fast. A good surface has a lot of moisture\
+in it, which isn't necessarily a bad thing. In fact, sometimes a good\
+racetrack yields much faster running times than a fast one. The Daily\
+Racing Form and some track superintendents use the term wet-fast when this \
+type of scenario crops up.\
+\
+The drying process continues, times improve and the track is approaching\
+a FAST condition. Some flying dust may be evident.
+hy	Heavy	Seldom seen nowadays, this describes a track drying out after a lengthy\
+spell of mud and means a stickiness likely to tire horses that run too\
+fast too soon.\
+\
+Similar to Muddy, track surface is deep and consistency is thick, an\
+obvious slowing of times will be apparent as will the tiring of front runners.
+my	Muddy	The water has soaked into the base beneath the cushion, with an effect\
+that often confers advantage on Thoroughbreds with small, cup-like feet\
+and tires those with larger, flatter ones. Contrary to the lore of the past,\
+a muddy track is not always a haven for horses that lag behind in the \
+early stages. A muddy track may be an advantage to a quick-starting animal\
+able to kick wet soil in the faces of its rearward opponents. Here again,\
+the handicapper's main recourse is observation of early-speed performances.\
+\
+Muddy is the next level down from good, and in this case, the racetrack\
+has taken so much rain that it can't be harrowed. Instead, a float is\
+attached to the back of the tractors to flatten out the dirt.\
+\
+Moisture has permeated the base of the track; times are somewhat slower\
+and running tires the horses more.
+sl	Slow	Wetter than good, but not as soft as muddy. In the old days, a slow track\
+was a great help to come-from-behinders, and often produces that effect on\
+modern strips.\
+\
+The racing surface has begun to dry out; the base is still soft, but \
+surface drying is evident; times are generally slower than normal.
+sly	Sloppy	The track usually is covered with puddles but base is hard. In most places,\
+this helps the early speedsters.\
+\
+A sloppy track is easy to spot because it'll be raining cats and dogs, and\
+the top of the track surface will be covered in standing water.\
+\
+\
+As the track continues to accumulate moisture, the base is still solid but \
+water is beginning to seep into the base; SURFACE WATER IS EVIDENT.
+wf	Wet-Fast	Indicates the presence of insufficient moisture to invalidate the "fast"\
+sign on the infield board. "Wet-fast" is not used on those boards but\
+somtimes appears on bulletins under the stands. The track's effects\
+on horses with early speed may vary. At tracks that usually favor quick\
+starts, the first 'fast' day after a siege of rain and a period of drying\
+out may produce a situation in which speed horses do less than expected\
+during the early races but begin to recover their normal advantage later\
+in the program.\
+\
+Occurs immediately after a heavy rain; track has surface water on it, but\
+the base is still solid, accounting for times similar to (or even faster\
+than) a fast track.

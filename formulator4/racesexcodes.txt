@@ -1,0 +1,5 @@
+C	Colts and Geldings
+F	Fillies
+G	Geldings Only
+M	Fillies and Mares
+O	Open

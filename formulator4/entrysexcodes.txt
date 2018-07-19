@@ -1,0 +1,9 @@
+-	Don't Know
+c	Colt
+f	Filly
+g	Gelding
+h	Horse
+m	Mare
+r	Ridgeling
+s	Stallion (Quarter Horse)
+y	Spayed mare (Harness)

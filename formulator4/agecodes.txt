@@ -1,0 +1,19 @@
+11	10 Year Olds and Up
+2	2 Year Olds
+21	2 Year Olds and Up
+3	3 Year Olds
+31	3 Year Olds and Up
+34	3 & 4 Year Olds
+35	3, 4 & 5 Year Olds
+4	4 Year Olds
+41	4 Year Olds and Up
+45	4 & 5 Year Olds
+5	5 Year Olds
+51	5 Year Olds and Up
+61	6 Year Olds and Up
+71	7 Year Olds and Up
+8	8 Year Olds
+81	8 Year Olds and Up
+88	Special Restricted
+91	9 Year Olds and Up
+AL	All Ages(Open)

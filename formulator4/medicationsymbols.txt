@@ -1,0 +1,5 @@
+A	Adjunct Medication
+B	Butazolidin
+C	1st Time Bute
+L	Lasix (furosemide)
+M	1st Time Lasix

@@ -1,0 +1,9 @@
+	Thoroughbreds
+M	Mixed
+N	Non Thoroughbreds
+O	Appaloosa
+P	Paint
+Q	Quarter
+R	Arabians
+S	Harness
+T	Thoroughbreds

@@ -1,0 +1,27 @@
+1	Running W's
+2	Screens
+3	Shields
+a	Aluminum Pads
+b	Blinkers
+c	Mud Caulks
+d	Glued Shoes
+e	Inner rims
+f	Front bandages
+g	Goggles
+h	Outer Rims
+i	Inserts
+j	Aluminum Pad
+k	Flipping Halter
+l	Bar Shoes
+m	Blocks
+n	No Whip
+o	Blinker Off
+p	Pads
+q	Nasal Strip Off
+r	Bar shoe
+s	Nasal Strip
+t	Turndowns
+u	Spurs
+w	Queen's Plates
+y	No Shoes
+z	Tongue Tie

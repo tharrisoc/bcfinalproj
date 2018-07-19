@@ -1,0 +1,26 @@
+const express = require('express');
+const passport = require('passport');
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
+const router = express.Router();
+
+/* GET user profile. */
+router.get('/', ensureLoggedIn, function(req, res, next) {
+  res.send('You have reached the training page');
+});
+
+router.get('/racereview', ensureLoggedIn, function(req, res, next) {
+  res.render('rrtabletest.handlebars',  
+             { 'webPageTitle': 'Race Review Format' } );
+});
+
+router.get('/criteriaselection', ensureLoggedIn, function(req,res,next) {
+  res.render('criteriaselection.handlebars',
+             { 'webPageTitle': 'Training Criteria Selection' } );
+});
+
+router.get('/criteriaform', ensureLoggedIn, function(req, res, next) {
+  res.render('criteriaform.handlebars',
+             { 'webPageTitle': 'Criteria Entry' } );
+});
+
+module.exports = router;

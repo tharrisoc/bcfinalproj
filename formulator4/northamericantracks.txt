@@ -1,0 +1,99 @@
+Alb	Albuquerque	The Downs at Albuquerque	NM
+AP	Arlington	Arlington Park	IL
+Aqu	Aqueduct	Aqueduct	NY
+ArP	Arapahoe Park	Arapahoe Park	CO
+Atl	Atlantic City	Atlantic City	NJ
+ATO	Atokad Downs	Horsemen's Atokad Downs	NB
+Bel	Belmont Park	Belmont Park	NY
+Beu	Beulah	Beulah Park	OH
+BM	Bay Meadows	Bay Meadows	CA
+Bmf	Bay Meadows Fair	Bay Meadows Fair	CA
+Boi	Les Bois	Les Bois Park	ID
+BRD	Blue Ribbon Downs	Blue Ribbon Downs	OK
+Cby	Canterbury Park	Canterbury Park	MN
+CD	Churchill Downs	Churchill Downs	KY
+Cls	Columbus	Columbus	NE
+Cnl	Colonial Downs	Colonial Downs	VA
+Crc	Calder Race Course	Calder Race Course	FL
+CT	Charles Town	Charles Town	WV
+DeD	Delta Downs	Delta Downs	LA
+Del	Delaware Park	Delaware Park	DE
+Dmr	Del Mar	Del Mar	CA
+ELP	Ellis Park	Ellis Park	KY
+EmD	Emerald Downs	Emerald Downs	WA
+EvD	Evangeline Downs	Evangeline Downs	LA
+Fai	Fair Hill	Fair Hill	MD
+Far	North Dakota Horse Park	North Dakota Horse Park	ND
+Fer	Ferndale	Ferndale	CA
+FG	Fair Grounds	Fair Grounds	LA
+FH	Far Hills	Far Hills Race Meeting	NJ
+FL	Finger Lakes	Finger Lakes	NY
+Flg	Flagstaff	Flagstaff	AZ
+FMT	Fair Meadows Tulsa	Fair Meadows at Tulsa State Fair	OK
+Fno	Fresno	Fresno	CA
+Fon	Fonner Park	Fonner Park	NE
+FP	Fairmount Park	Fairmount Park	IL
+Fpx	Fairplex Park	Fairplex (Pomona)	CA
+GF	Great Falls	Great Falls	MT
+GG	Golden Gate Fields	Golden Gate Fields	CA
+GLD	Great Lakes Downs	Great Lakes Downs	MI
+GP	Gulfstream Park	Gulfstream Park	FL
+GrP	Grants Pass	Grants Pass	OR
+Haw	Hawthorne	Hawthorne	IL
+Hol	Hollywood Park	Hollywood Park	CA
+Hoo	Hoosier Park	Hoosier Park	IN
+Hou	Sam Houston	Sam Houston Race Park	TX
+HPO	Horsemen's Park	Horsemen's Park	NE
+IND	Indiana Downs	Indiana Downs	IN
+KD	Kentucky Downs	Kentucky Downs	KY
+Kee	Keeneland	Keeneland	KY
+LA	Los Alamitos	Los Alamitos	CA
+LaD	Louisiana Downs	Louisiana Downs	LA
+LnN	Lincoln	Lincoln State Fair	NE
+Lrl	Laurel Park	Laurel Race Course	MD
+LS	Lone Star Park	Lone Star Park	TX
+Man	Manor Downs	Manor Downs	TX
+Med	Meadowlands	Meadowlands	NJ
+Mnr	Mountaineer Park	Mountaineer Park	WV
+MPM	Mt Pleasant Meadows	Mt Pleasant Meadows	MI
+Mth	Monmouth Park	Monmouth Park	NJ
+Nmp	Northampton	Northampton	MA
+OP	Oaklawn Park	Oaklawn Park	AK
+OSA	Oak Tree At Santa Anita	Oak Tree At Santa Anita Park	CA
+OTC	Ocala Training Center	Ocala Training Center	FL
+Pen	Penn National	Penn National	PA
+Pha	Philadelphia Park	Philadelphia Park	PA
+Pim	Pimlico	Pimlico	MD
+Pla	Playfair	Playfair	WA
+Pln	Pleasanton	Pleasanton	CA
+PM	Portland Meadows	Portland Meadows	OR
+PrM	Prairie Meadows	Prairie Meadows	IA
+RD	River Downs	River Downs	OH
+Ret	Retama Park	Retama Park	TX
+Ril	Rillito	Rillito	AZ
+RP	Remington Park	Remington Park	OK
+Rui	Ruidoso Downs	Ruidoso Downs	NM
+SA	Santa Anita	Santa Anita Park	CA
+Sac	Sacramento	Sacramento	CA
+Sar	Saratoga	Saratoga	NY
+SFe	Santa Fe	Santa Fe	NM
+Sol	Solano	Solano (Vallejo)	CA
+SR	Santa Rosa	Santa Rosa	CA
+SRP	Sunray Park	Sun Ray Park	NM
+Stk	Stockton	Stockton	CA
+SuD	Sun Downs	Sun Downs	WA
+Suf	Suffolk Downs	Suffolk Downs	MA
+Sun	Sunland Park	Sunland Park	NM
+Tam	Tampa Bay Downs	Tampa Bay Downs	FL
+Tdn	Thistledown	Thistledown	OH
+Tet	Teton	Teton (Sandy Downs)	ID
+Tim	Timonium	Timonium	MD
+TP	Turfway Park	Turfway Park	KY
+TuP	Turf Paradise	Turf Paradise	AZ
+Wds	Woodlands	Woodlands	KS
+WMF	Western Mt Fair	Western Mt Fair	MT
+WRD	Will Rogers Downs	Will Rogers Downs	OK
+Wyo	Wyoming Downs	Wyoming Downs	WY
+YAV	Yavapai Downs	Yavapai Downs	AZ
+YD	Yellowstone Downs	Yellowstone Downs	MT
+Zia	Zia Park	Zia Park	NM

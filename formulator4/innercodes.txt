@@ -1,0 +1,7 @@
+	Main Track
+/	Cancelled or Non Thoroughbred
+C	Out of Chute on Main Track
+I	Inner Track
+J	Out of Chute and Inner Track
+O	Outer Track
+P	Out of Chute and Outer Track

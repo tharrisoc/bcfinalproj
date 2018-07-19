@@ -1,0 +1,15 @@
+A	Dirt
+B	Turf
+D	Dirt
+E	Dirt Training Track
+F	Dirt Training Track
+G	Inner Turf
+I	Inner Turf
+J	Inner Turf
+M	Inner Turf
+R	Inner Turf Training Track
+S	Inner Turf Training Track
+T	Turf
+U	Turf Training Track
+V	Turf Training Track
+X	All Weather Track

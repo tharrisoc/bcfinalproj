@@ -1,0 +1,31 @@
+fm	Firm	A grass course is firm when it's in optimum condition. If no rain has \
+fallen lately, it's necessary to water the course to maintain growth.\
+The ground underneath the grass is firm to the point of being hard.\
+\
+Equivalent to Fast on Dirt Track; course is dry and at peak efficiency.
+gd	Good	A good course has taken some rain, but not to the point of being\
+saturated. As horses run over it, the ground has a lot more give.\
+You notice more divots fly up than on a firm course.\
+\
+The drying process continues, times improve and the track is approaching\
+a FIRM condition. Fewer divots may be evident.
+gf	Good-Firm	Foreign races only
+gs	Good-Soft	Foreign races only
+hd	Hard	Surface is hard and horses do not have normal cushion of the course;\
+frequently follows periods of drought and high temperatures
+hy	Heavy	A deep, heavy and often waterlogged turf course that produces very slow times.
+sf	Soft	You see this designation more in foreign racing than in the United States.\
+The grass course has been saturated, and the ground is soft to the point\
+of being mushy. The running times are extremely slow because the horses\
+are literally running over a bog.\
+\
+Usually following prolonged wet weather; horses' hooves sink in and dig\
+up the course; times are considerably slower.
+yl	Yielding	The ground is so moist that it gives way underneath the horses'\
+hooves. You see huge chunks of divots flying back as the horses run.\
+This course is very tiring, and seldom do you see horses win going wire\
+to wire. Dead late closers (com-from-behind horses) stay covered up and\
+make one mad dash in the stretch run.\
+\
+Usually following some wet weather; horses' hooves dig up the course\
+and divots are flying; times are slower.

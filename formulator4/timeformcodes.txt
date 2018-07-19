@@ -1,0 +1,8 @@
++	The horse may be better than rated
+?	The rating is suspect or (used alone) the horse is out of form or can't be assessed with confidence
+B	Turf
+P	The horse is capable of much better
+T	Turf
+p	The horse is likely to improve
+บ	The horse is unreliable (for tempermental or other reasons)
+บบ	The horse is so unsatisfactory as to be not worth a rating

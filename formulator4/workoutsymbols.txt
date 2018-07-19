@@ -1,0 +1,11 @@
+ò	Best of day/distance
+B	Breezing
+D	Driving
+(d)	Worked around dogs
+E	Easily
+g	Worked from gate
+H	Handily
+tr.t	Training track
+TR	Training race
+3/25	Workout ranking
+bg	Breezing from the gate

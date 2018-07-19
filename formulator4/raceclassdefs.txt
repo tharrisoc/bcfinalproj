@@ -1,0 +1,77 @@
+ALW	*Race under Allowance Conditions	\N
+AN2L	*Starter Allowance (Number indicates minimum claiming price horse must have started for to be eligible)	\N
+AOC	*Optional Claiming Race with Allowance Condition	\N
+CLH	Claiming Handicap	A race for horses entered to be claimed, with weight\
+assignments similar to those of a handicap race (see Handicap.)
+CLM	Claiming	Claiming races are the most commonly run races in the country.\
+Horses competing in claiming races are offered for sale for a\
+specified price to eligible buyers.
+ClmN	*Claiming Non-winners of m races or more Lifetime, Money, Conditions, Time period, etc.	\N
+CST	Claiming Stakes	A race for horses entered to be claimed. Nomination and\
+possibly entry and starters fees are added to the base purse.
+Dby	Derby	\N
+Fut	Futurity	\N
+GStk	Graded Stakes	The top levels of the class hierarchy == Grades I, II and III
+HCP	Handicap	This race type refers to a race where the weights are assigned by\
+the track's Racing Secretary or Handicapper based upon past\
+performances. Their goal is to assign weight to each horse so that\
+all entrants have an equal chance of winning the race. THERE IS\
+NO ADDED MONEY IN A HANDICAP RACE.
+Inv	Invitational	\N
+MAT	Match Race	A match race is a race that involves just two horses.It can be run\
+under a number of conditions, but generally is run in allowance\
+or handicap conditions.\
+To qualify as a MATCH RACE, only two horses were entered in the\
+race. The race does not qualify as a MATCH RACE if more than\
+two horses originally entered the race and some were scratched,\
+making it a two-horse field.
+MCL	Maiden Claiming	Maiden claiming races are for horses that have never won a race\
+and are eligible to be claimed
+MDN	Maiden Special Weight	\N
+MOC	Maiden Optional Claiming	This type of race is restricted to maidens (non-winners lifetime)\
+that run under the conditions exactly as those for optional\
+claiming races (See Optional Claiming)
+MST	Maiden Stakes	\N
+MSW	Maiden Special Weight	These races are reserved for horses that have never won a race.\
+They are not eligible to be claimed. The term special weight is\
+derived from that fact that arbitrary weights are assigned to\
+horses by age. (e.g. 3 year olds 118 pounds, older 122 pounds.)
+OCH	Optional Claiming Handicap	This type is an OPTIONAL CLAIMING race that is run under\
+HANDICAP conditions. See both race types listed for a further\
+explanation.
+OCL	Optional Claiming	This race type is quite involved and incorporates features of\
+starter allowance and claiming races. Horses competing in this\
+type of race can either compete as a claimer, or as a starter\
+allowance horse, with no claiming price.\
+Those competing in this race that are not eligible to be claimed\
+must have competed at or below the claiming level specified,\
+and have not won a race at the specified claiming or higher since\
+last competing at the specified claiming level or a lower claiming\
+price.
+SHP	Starter Handicap	This category is reserved for horses that have been running in\
+inferior claiming company, but have improved to the point that\
+they would not be risked being sold in a claiming race. In effect\
+this race is an allowance race restricted to horses that have\
+previously run in a claiming race at a specific level (e.g. starters\
+for a claiming price of $5,000). In a starter handicap race, horses\
+are weighted similar to a handicap race.
+STA	Starter Allowance	\N
+STK	Stakes	Races are classified as STAKES races when they meet two basic\
+criteria, 1) They have money added to the base purse of the race\
+in the form of nomination, entry and or starter fees paid by\
+owners; 2) Nominations for a STAKES race must close at least 72\
+hours prior to its running.\
+\
+Stakes races can be under allowance conditions (weight off\
+allowed based upon number of wins or money won); handicap\
+conditions (Racing Secretary or Handicapper assigns weight\
+based upon past performances with the goal of giving each horse\
+an equal chance to win the race) or weight for age conditions,\
+(each horse carries equal weights based upon their age and sex).
+STR	Starter Allowance	Starter allowance races are identical to starter handicap races\
+with the only difference that horses competing in this race are\
+weighted through allowance conditions (i.e. number of races or\
+money won).
+TR	Training Race	This race type is to be used ONLY in conjunction with\
+Steeplechase races. The National Steeplechase Association has\
+designated some races run on the "Flat" as TRAINING races.

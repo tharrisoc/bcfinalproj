@@ -1,0 +1,13 @@
+A	About Turf
+B	About Dirt
+C	About Steeplechase
+D	Dirt
+E	Hurdles
+F	About Hurdles
+G	Off the Turf with a distance change
+H	Hunt Meet
+O	Off the Turf with no distance change
+S	Steeplechase
+T	Turf
+X	All Weather
+\\	Simulcast, Cancelled, Non Thoroughbred

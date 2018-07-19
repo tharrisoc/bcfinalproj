@@ -1,0 +1,14 @@
+	0.00	0.03	dead heat
+1	0.87	0.99	Round up to nearest whole number\
+Between 1 and 10 lengths append the\
+following substitution values.\
+Drop the fractional portion when the\
+length is greater than or equal to 10\
+lengths, except for the finish lengths.\
+
+1/2	0.36	0.65	one-half length
+1/4	0.15	0.35	[NOTE OVERLAP]
+3/4	0.66	0.86	three-quarters length
+hd	0.09	0.16	Head
+nk	0.17	0.35	Neck
+ns	0.04	0.08	Nose
