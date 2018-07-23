@@ -9,7 +9,7 @@ const dotenv = require('dotenv');
 const passport = require('passport');
 const Auth0Strategy = require('passport-auth0');
 const flash = require('connect-flash');
-const exphbs       = require("express-handlebars");
+const exphbs = require("express-handlebars");
 
 dotenv.load();
 
