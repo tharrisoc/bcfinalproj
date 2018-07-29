@@ -142,13 +142,27 @@ router.get('/dirttrackconditions/:TrackCondition', ensureLoggedIn, function(req,
 });
 
 
+//ENTRY SEX CODES
 // Retrieve all of the rows from the small EntrySexCodes table
-router.get('/entrysexscodes', ensureLoggedIn, function(req, res, next) {
+router.get('/entrysexcodes', ensureLoggedIn, function(req, res, next) {
     db.EntrySexCodes.findAll({}).then(function(results) {
         res.json(results);
     });
 });
 
+// Retrieve one row from the small EntrySexCodes table
+router.get('/entrysexcodes/:Code', ensureLoggedIn, function(req, res, next) {
+    db.EntrySexCodes.findOne({
+        where: {
+            Code: req.params.Code
+          }
+    }).then(function(results) {
+        res.json(results);
+    });
+});
+
+
+// EQUIPMENT SYMBOLS
 // Retrieve all of the rows from the small EquipmentSymbols table
 router.get('/equipmentsymbols', ensureLoggedIn, function(req, res, next) {
     db.EquipmentSymbols.findAll({}).then(function(results) {
@@ -156,23 +170,63 @@ router.get('/equipmentsymbols', ensureLoggedIn, function(req, res, next) {
     });
 });
 
-// Retrieve all of the rows from the small InnerCodes table
-router.get('/innercodes', ensureLoggedIn, function(req, res, next) {
-    db.InnersCodes.findAll({}).then(function(results) {
+// Retrieve one row from the small EquipmentSymbols table
+router.get('/equipmentsymbols/:Symbol', ensureLoggedIn, function(req, res, next) {
+    db.EquipmentSymbols.findOne({
+        where: {
+            Symbol: req.params.Symbol
+          }
+    }).then(function(results) {
         res.json(results);
     });
 });
 
+
+// INNER CODES
+// Retrieve all of the rows from the small InnerCodes table
+router.get('/innercodes', ensureLoggedIn, function(req, res, next) {
+    db.InnerCodes.findAll({}).then(function(results) {
+        res.json(results);
+    });
+});
+
+// Retrieve one row from the small InnerCodes table
+router.get('/innercodes/:Code', ensureLoggedIn, function(req, res, next) {
+    db.InnerCodes.findOne({
+        where: {
+            Code: req.params.Code
+          }
+    }).then(function(results) {
+        res.json(results);
+    });
+});
+
+
+// MEDICATION SYMBOLS
 // Retrieve all of the rows from the small MedicationSymbols table
-router.get('/medicationsymsbols', ensureLoggedIn, function(req, res, next) {
+router.get('/medicationsymbols', ensureLoggedIn, function(req, res, next) {
     db.MedicationSymbols.findAll({}).then(function(results) {
         res.json(results);
     });
 });
 
+// Retrieve one row from the small MedicationSymbols table
+router.get('/medicationsymbols/:Symbol', ensureLoggedIn, function(req, res, next) {
+    db.MedicationSymbols.findOne({
+        where: {
+            Symbol: req.params.Symbol
+          }
+    }).then(function(results) {
+        res.json(results);
+    });
+});
+
+
+// MISCELLANEOUS SYMBOLS
+// [Note: there are no miscellaneous symbols yet]
 // Retrieve all of the rows from the small MiscellaneousSymbols table
 router.get('/miscellaneoussymbols', ensureLoggedIn, function(req, res, next) {
-    db.MiscellaneousSymbolss.findAll({}).then(function(results) {
+    db.MiscellaneousSymbols.findAll({}).then(function(results) {
         res.json(results);
     });
 });
@@ -198,9 +252,21 @@ router.get('/northamericantracks/:TrackCode', ensureLoggedIn, function(req, res,
 });
 
 
+// RACE CLASS DEFS
 // Retrieve all of the rows from the small RaceClassDefs table
 router.get('/raceclassdefs', ensureLoggedIn, function(req, res, next) {
     db.RaceClassDefs.findAll({}).then(function(results) {
+        res.json(results);
+    });
+});
+
+// Retrieve one row from the small RaceClassDefs table
+router.get('/raceclassdefs/:RaceClassCode', ensureLoggedIn, function(req, res, next) {
+    db.RaceClassDefs.findOne({
+        where: {
+          RaceClassCode: { [Op.like]: req.params.RaceClassCode }
+        }
+    }).then(function(results) {
         res.json(results);
     });
 });
@@ -226,9 +292,21 @@ router.get('/racesexcodes/:Code', ensureLoggedIn, function(req, res, next) {
 });
 
 
+// RACE TYPE CODES
 // Retrieve all of the rows from the small RaceTypeCodes table
 router.get('/racetypecodes', ensureLoggedIn, function(req, res, next) {
     db.RaceTypeCodes.findAll({}).then(function(results) {
+        res.json(results);
+    });
+});
+
+// Retrieve one row from the small RaceTypeCodes table
+router.get('/racetypecodes/:Code', ensureLoggedIn, function(req, res, next) {
+    db.RaceTypeCodes.findOne({
+        where: {
+            Code: req.params.Code
+          }
+    }).then(function(results) {
         res.json(results);
     });
 });
@@ -279,9 +357,21 @@ router.get('/surfacecodes/:Code', ensureLoggedIn, function(req, res, next) {
 });
 
 
+// TIMEFORM CODES
 // Retrieve all of the rows from the small TimeformCodes table
 router.get('/timeformcodes', ensureLoggedIn, function(req, res, next) {
     db.TimeformCodes.findAll({}).then(function(results) {
+        res.json(results);
+    });
+});
+
+// Retrieve one row from the small TimeformCodes table
+router.get('/timeformcodes/:Code', ensureLoggedIn, function(req, res, next) {
+    db.TimeformCodes.findOne({
+        where: {
+            Code: req.params.Code
+          }
+    }).then(function(results) {
         res.json(results);
     });
 });
@@ -327,6 +417,7 @@ router.get('/workoutsurfacecodes/:Code', ensureLoggedIn, function(req, res, next
 });
 
 
+// WORKOUT SYMBOLS
 // Retrieve all of the rows from the small WorkoutSymbols table
 router.get('/workoutsymbols', ensureLoggedIn, function(req, res, next) {
     db.WorkoutSymbols.findAll({}).then(function(results) {
@@ -334,5 +425,15 @@ router.get('/workoutsymbols', ensureLoggedIn, function(req, res, next) {
     });
 });
 
+// Retrieve one row from the small WorkoutSymbols table
+router.get('/workoutsymbols/:Symbol', ensureLoggedIn, function(req, res, next) {
+    db.WorkoutSymbols.findOne({
+        where: {
+            Symbol: req.params.Symbol
+          }
+    }).then(function(results) {
+        res.json(results);
+    });
+});
 
 module.exports = router;
