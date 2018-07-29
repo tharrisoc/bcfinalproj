@@ -1,5 +1,5 @@
 module.exports = function(sequelize, Sequelize) {
-    var RaceSexCodes = sequelize.define('RaceSexCodes', {
+    var BreedTypeCodes = sequelize.define('BreedTypeCodes', {
           Code: {
              type: Sequelize.CHAR
          },
@@ -21,7 +21,7 @@ module.exports = function(sequelize, Sequelize) {
        }
     );
 
-    RaceSexCodes.removeAttribute('id');
-
-    return RaceSexCodes;
+    BreedTypeCodes.removeAttribute('id');
+    
+    return BreedTypeCodes;
 }

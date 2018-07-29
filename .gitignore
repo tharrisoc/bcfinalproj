@@ -17,6 +17,7 @@ package-lock.json
 
 # backup files
 *BACKUP??.*
+*BACKUP
 *.*~
 Backups/
 *BAD*.*
@@ -71,3 +72,5 @@ typings/
 
 # next.js build output
 .next
+
+uploads/

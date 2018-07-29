@@ -1,13 +1,15 @@
 module.exports = function(sequelize, Sequelize) {
-    var RaceSexCodes = sequelize.define('RaceSexCodes', {
-          Code: {
+    var DirtTrackConditions = sequelize.define('DirtTrackConditions', {
+          TrackCondition: {
              type: Sequelize.CHAR
          },
-
          Description: {
              type: Sequelize.STRING
-         }
-       },
+         },
+         Explanation: {
+            type: Sequelize.TEXT
+        }
+     },
        {
          timestamps: false
        },
@@ -15,13 +17,13 @@ module.exports = function(sequelize, Sequelize) {
           indexes: [
               {
                   unique: true,
-                  fields: ['Code']
+                  fields: ['TrackCondition']
               }
           ]
        }
     );
 
-    RaceSexCodes.removeAttribute('id');
-
-    return RaceSexCodes;
+    DirtTrackConditions.removeAttribute('id');
+    
+    return DirtTrackConditions;
 }
