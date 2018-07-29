@@ -10,4 +10,3 @@ O	Off the Turf with no distance change
 S	Steeplechase
 T	Turf
 X	All Weather
-\\	Simulcast, Cancelled, Non Thoroughbred

@@ -15,7 +15,14 @@ dotenv.load();
 
 const routes = require('./routes/index');
 const user = require('./routes/user');
+
 const training = require('./routes/training');   // TWH
+const database = require('./routes/database');    // TWH
+
+// Models
+const models = require("./app/models");  // TWH
+
+const PORT = process.env.PORT || 3000;
 
 // This will configure Passport to use Auth0
 const strategy = new Auth0Strategy(
@@ -24,7 +31,7 @@ const strategy = new Auth0Strategy(
     clientID: process.env.AUTH0_CLIENT_ID,
     clientSecret: process.env.AUTH0_CLIENT_SECRET,
     callbackURL:
-      process.env.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
+      process.env.AUTH0_CALLBACK_URL || 'http://localhost:' + PORT + '/callback'
   },
   function(accessToken, refreshToken, extraParams, profile, done) {
     // accessToken is the token to call Auth0 API (not needed in the most cases)
@@ -98,7 +105,8 @@ app.use(function(req, res, next) {
 
 app.use('/', routes);
 app.use('/user', user);
-app.use('/training', training);
+app.use('/training', training);     // TWH
+app.use('/database', database);     // TWH
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -130,5 +138,14 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+// TWH Start
+// Sync Database
+models.sequelize.sync().then(function() {
+  console.log('Nice! Database looks fine');
+}).catch(function(err) {
+  console.log(err, "Something went wrong with the Database Update!");
+});
+// TWH End
 
 module.exports = app;

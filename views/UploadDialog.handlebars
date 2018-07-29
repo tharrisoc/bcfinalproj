@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+   
+    <head>
+        <title>Upload File Dialog Box</title>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        
+        
+        <meta name="description" content="Neural Trainer Data Upload" />
+        <meta name="keywords" content="Handicappig Data upload file Formulator4" />        
+        <meta name="author" content="Thomas Harris" />
+        <meta name="copyright" content="2018, thomas harris" />
+        <meta name="publisher" content="thomas harris" />
+
+        <!-- Bootstrap.CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+              crossorigin="anonymous">
+        
+        <style type="text/css">
+          #trackselect { margin-top :-.75rem; }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+Launch Data Upload modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" arialabelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Data Select</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<h4>Formulator 4 File Upload Selection</h4>
+<p class="text-muted small">Specify the parameters that you want to use for selecting the files that will be uploaded.</p>
+<form>
+    <div class="form-group">
+      <label for="startdate">Start Date</label>
+      <input type="date" class="form-control mb-3" id="startdate" name="startdate"
+             min="2004-04-09" max="2012-09-01">
+
+      <label for="enddate">End Date</label>
+      <input type="date" class="form-control mb-3" id="enddate" name="enddate"
+             min="2004-04-09" max="2012-09-01">
+      <div class="checkbox" mb-3>
+        <label>
+          <input type="checkbox"> End Date same as Start Date
+        </label>
+      </div>
+
+      <p class="text-muted small pt-1">Hold down Ctrl or Cmd Key to choose more than one</p>
+
+      <div class="input-group mb-3" id="trackselect">
+        <div class="input-group-prepend">
+         <label class="input-group-text" for="racetracks">Race Track(s)</label>
+        </div>
+
+        <select class="custom-select" id="racetracks">
+
+          <option disabled selected>
+            <div class="row">
+              <div class="col">TrackCode</div>
+              <div class="col">ShortName</div>
+              <div class="col">LongName</div>
+              <div class="col">State</div>
+            </div>
+          </option>
+
+          <option>
+            <div class="row">
+              <div class="col">Alb</div>
+              <div class="col">Albuquerque</div>
+              <div class="col">The Downs at Albuquerque</div>
+              <div class="col">NM</div>
+            </div>
+          </option>
+
+          <option>
+            <div class="row">
+              <div class="col">AP</div>
+              <div class="col">Arlington</div>
+              <div class="col">Arlington Park</div>
+              <div class="col">IL</div>
+            </div>
+          </option>
+
+          <option>
+            <div class="row">
+               <div class="col">Arp</div>
+               <div class="col">Arapahoe Park</div>
+               <div class="col">Arapahoe Park</div>
+               <div class="col">CO</div>
+            </div>
+          </option>
+    
+          <option>
+            <div class="row">
+              <div class="col">Atl</div>
+              <div class="col">Atlantic City</div>
+              <div class="col">Atlantic City</div>
+              <div class="col">NJ</div>
+            </div>
+          </option>
+        
+        </select>
+      </div>
+
+    </div>  <!-- form-group -->
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+</div>
+<div class="modal-footer">
+</div>  <!-- modal-footer -->
+</div>
+</div>
+</div>
