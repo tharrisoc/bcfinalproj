@@ -1,4 +1,4 @@
-// This script contains routes for all of the Formulator 4 database operations
+// This script serves html pages through handlebars templates
 
 const express = require('express');
 const passport = require('passport');
@@ -11,6 +11,29 @@ const Op = Sequelize.Op;
 
 db = require( __dirname + "/../app/models" );
 
+router.get('/abbrevs', ensureLoggedIn, function(req, res, next) {
+
+});
+
+router.get('/locations', ensureLoggedIn, function(req, res, next) {
+  let data = {};
+  db.StateNames.findAll({}).then(function(results) {
+    data.stateresults = results;
+    db.NorthAmericanTracks.findAll({}).then(function(results) {
+      data.tracksresults = results;
+      db.CanadaProvNames.findAll({}).then(function(results) {
+        data.provinceresults = results;
+        db.CountryNames.findAll({}).then(function(results) {
+          data.countryresults = results;
+          res.render('geographypage.handlebars',  
+          { 'webPageTitle': 'Geography Tables', data: data } );
+        });
+      });
+    });
+  });
+});
+
+/*
 // AGE CODES
 // Retrieve all of the rows from the small AgeCodes table
 router.get('/agecodes', ensureLoggedIn, function(req, res, next) {
@@ -73,50 +96,6 @@ router.get('/breedtypecodes/:Code', ensureLoggedIn, function(req, res, next) {
         where: {
           Code: req.params.Code
         }
-    }).then(function(results) {
-        res.json(results);
-    });
-});
-
-
-// CANADA PROVINCE NAMES
-// Retrieve all of the rows from the small CanadaProvNames table
-router.get('/canadaprovnames', ensureLoggedIn, function(req, res, next) {
-    db.CanadaProvNames.findAll({}).then(function(results) {
-        res.json(results);
-    });
-});
-
-// Retrieve the abbreviation for a province from the small CanadaProvNames table
-// [Note: if the name contains spaces, e.g. Prince Edward Island,
-//        substitute %20 for each space, i.e. Prince%20Edward%20Island]
-router.get('/canadaprovnames/:Name', ensureLoggedIn, function(req, res, next) {
-    db.CanadaProvNames.findOne({
-        where: {
-            Name: req.params.Name
-          }
-    }).then(function(results) {
-        res.json(results);
-    });
-});
-
-
-// COUNTRY NAMES
-// Retrieve all of the rows from the small CountryNames table
-router.get('/countrynames', ensureLoggedIn, function(req, res, next) {
-    db.CountryNames.findAll({}).then(function(results) {
-        res.json(results);
-    });
-});
-
-// Retrieve the abbreviation for a country from the small CountryNames table
-// [Note: if the name contains spaces, e.g. Czech Republic,
-//        substitute %20 for each space, i.e. Czech%20Republic]
-router.get('/countrynames/:Name', ensureLoggedIn, function(req, res, next) {
-    db.CountryNames.findOne({
-        where: {
-            Name: req.params.Name
-          }
     }).then(function(results) {
         res.json(results);
     });
@@ -233,26 +212,6 @@ router.get('/miscellaneoussymbols', ensureLoggedIn, function(req, res, next) {
 });
 
 
-// NORTH AMERICAN TRACKS
-// Retrieve all of the rows from the small northamericantracks table
-router.get('/northamericantracks', ensureLoggedIn, function(req, res, next) {
-    db.NorthAmericanTracks.findAll({}).then(function(results) {
-        res.json(results);
-    });
-});
-
-// Retrieve one row from the small northamericantracks table
-router.get('/northamericantracks/:TrackCode', ensureLoggedIn, function(req, res, next) {
-    db.NorthAmericanTracks.findOne({
-        where: {
-          TrackCode: { [Op.like]: req.params.TrackCode }
-        }
-    }).then(function(results) {
-        res.json(results);
-    });
-});
-
-
 // RACE CLASS DEFS
 // Retrieve all of the rows from the small RaceClassDefs table
 router.get('/raceclassdefs', ensureLoggedIn, function(req, res, next) {
@@ -306,28 +265,6 @@ router.get('/racetypecodes/:Code', ensureLoggedIn, function(req, res, next) {
     db.RaceTypeCodes.findOne({
         where: {
             Code: req.params.Code
-          }
-    }).then(function(results) {
-        res.json(results);
-    });
-});
-
-
-// STATE NAMES
-// Retrieve all of the rows from the small StateNames table
-router.get('/statenames', ensureLoggedIn, function(req, res, next) {
-    db.StateNames.findAll({}).then(function(results) {
-        res.json(results);
-    });
-});
-
-// Retrieve the abbreviation for a state from the small StateNames table
-// [Note: if the name contains spaces, e.g. Rhode Island,
-//        substitute %20 for each space, i.e. Rhoad%20Island]
-router.get('/statenames/:Name', ensureLoggedIn, function(req, res, next) {
-    db.StateNames.findOne({
-        where: {
-            Name: req.params.Name
           }
     }).then(function(results) {
         res.json(results);
@@ -436,5 +373,7 @@ router.get('/workoutsymbols/:Symbol', ensureLoggedIn, function(req, res, next) {
         res.json(results);
     });
 });
+
+*/
 
 module.exports = router;

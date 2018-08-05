@@ -38,7 +38,7 @@ function handleRequest(request, response) {
       }
       var newpath =  destinationFolder + originalName;
 
-console.log("'" + PORT + "' '" + oldpath + "' '" + newpath + "'");  // DEBUG
+      console.log("'" + PORT + "' '" + oldpath + "' '" + newpath + "'");  // DEBUG
       fs.rename(oldpath, newpath, function(err) {
       	if (err) throw err;
       	response.write('File uploaded and moved!');

@@ -16,8 +16,9 @@ dotenv.load();
 const routes = require('./routes/index');
 const user = require('./routes/user');
 
-const training = require('./routes/training');   // TWH
-const database = require('./routes/database');    // TWH
+const training   = require('./routes/training');    // TWH
+const database   = require('./routes/database');    // TWH
+const htmlroutes = require('./routes/htmlroutes');  // TWH
 
 // Models
 const models = require("./app/models");  // TWH
@@ -107,6 +108,7 @@ app.use('/', routes);
 app.use('/user', user);
 app.use('/training', training);     // TWH
 app.use('/database', database);     // TWH
+app.use('/htmlroutes', htmlroutes);             // TWH
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
