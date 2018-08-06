@@ -1,0 +1,399 @@
+<div class="container">
+  <div class"row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Age Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="agecodestable">
+              <caption>List of Codes for age eligiblility</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="agedata">
+                {{#each data.ageresults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Beaten Lengths</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="beatenlengthstable">
+              <caption>List of Codes for how much a horse was beaten by</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Description</th>
+                  <th scope="col">Low</th>
+                  <th scope="col">High</th>
+                  <th scope="col">Comment</th>
+                </tr>
+              </thead>
+              <tbody id="beatendata">
+                {{#each data.beatenresults}}
+                  <tr><td>{{this.Description}}</td><td>{{this.LowCode}}</td><td>{{this.HighCode}}</td><td>{{this.Comment}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Breed Type Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="breedtypecodestable">
+              <caption>List of codes for the breed of a horse</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="breedtypedata">
+                {{#each data.breedtyperesults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Dirt Track Conditions</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="dirttrackconditionstable">
+              <caption>List of codes for the condition of a dirt track</caption>
+              <thead>
+                <tr>
+                  <th scope="col">TrackCondition</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Explanation</th>
+                </tr>
+              </thead>
+              <tbody id="dirttrackdata">
+                {{#each data.dirtcondresults}}
+                  <tr><td>{{this.TrackCondition}}</td><td>{{this.Description}}</td><td>{{this.Explanation}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+  </div>  <!-- row -->
+
+  <div class"row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Entry Sex Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="entrysexcodes">
+              <caption>List of codes for the sex of horses</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="entrysexcodedata">
+                {{#each data.entrysexcoderesults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Equipment Symbols</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="equipmentsymbols">
+              <caption>Symbols for the type of equipment a horse can wear during a race</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Symbol</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="equipmentdata">
+                {{#each data.equipmentresults}}
+                  <tr><td>{{this.Symbol}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Inner Track Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="innercodes">
+              <caption>Symbols for the type of an inner track</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="innercodedata">
+                {{#each data.innercoderesults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Medication Symbols</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="medicationsymbols">
+              <caption>Symbols for the medications that a horse can take</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Symbol</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="medsymdata">
+                {{#each data.medsymresults}}
+                  <tr><td>{{this.Symbol}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+  </div>  <!-- row -->
+
+  <div class"row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Race Class Defs</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="raceclassdefs">
+              <caption>Symbols for some major race classes</caption>
+              <thead>
+                <tr>
+                  <th scope="col">RaceClassCode</th>
+                  <th scope="col">RaceClassName</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="classdefdata">
+                {{#each data.classdefresults}}
+                  <tr><td>{{this.RaceClassCode}}</td><td>{{this.RaceClassName}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Race Sex Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="racesexcodes">
+              <caption>Symbols for the sex of horses that can be entered into a particular race</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="racesexdata">
+                {{#each data.racesexdataresults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Race Type Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="racetypecodes">
+              <caption>Codes for major race categories</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="racetypedata">
+                {{#each data.racetypecoderesults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Surface Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="surfacecodes">
+              <caption>Codes for the type of surface a race can be run on</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="surfacecodedata">
+                {{#each data.surfacecoderesults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+  </div>  <!-- row -->
+
+  <div class"row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Timeform Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="timeformcodes">
+              <caption>Codes for the European rating system based on speed and class</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="timeformratingdata">
+                {{#each data.timeformratingresults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Turf Track Conditions</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="turftrackconditions">
+              <caption>List of codes for the condition of a turf track</caption>
+              <thead>
+                <tr>
+                  <th scope="col">TrackCondition</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Explanation</th>
+                </tr>
+              </thead>
+              <tbody id="turftrackconditiondata">
+                {{#each data.turftrackconditionresults}}
+                  <tr><td>{{this.TrackCondition}}</td><td>{{this.Description}}</td><td>{{this.Explanation}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Workout Surface Codes</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="workoutsurfacecodes">
+              <caption>List of codes for the surface where a horse worked</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="workoutsurfacecodedata">
+                {{#each data.workoutsurfacecoderesults}}
+                  <tr><td>{{this.Code}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Workout Symbols</h5>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered table-hover' id="workoutsymbols">
+              <caption>Symbols for the quality of workout a horse had</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Symbol</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody id="workoutsymboldata">
+                {{#each data.workoutsymbolresults}}
+                  <tr><td>{{this.Symbol}}</td><td>{{this.Description}}</td></tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>  <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+  </div>  <!-- row -->
+
+</div>  <!-- container -->

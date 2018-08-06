@@ -2,12 +2,10 @@
   <div class="row">
     <div class="col-sm">
       <div class="card">
-        <div class="card-header">
-        </div>
         <div class="card-body">
           <h5 class="card-title">State Names &amp; Codes</h5>
           <div class="table-responsive">
-	        <table class="table table-striped table-bordered table-hover" id="statestable">
+	        <table class="table table-sm table-striped table-bordered table-hover" id="statestable">
 	          <caption>List of U. S. states and their two-character abbreviations</caption>
 	          <thead>
 	            <tr>
@@ -28,12 +26,58 @@
 
     <div class="col-sm">
       <div class="card">
-        <div class="card-header">
-        </div>
+        <div class="card-body">
+          <h5 class="card-title">Canadian Provinces &amp; Codes</h5>
+          <div class="table-responsive">
+          <table class="table table-sm table-striped table-bordered table-hover" id="provincestable">
+            <caption>List of Canadian provinces and their two-character abbreviations</caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Code</th>
+              </tr>
+            </thead>
+            <tbody id="provincedata">
+              {{#each data.provinceresults}}
+                <tr><td>{{this.Name}}</td><td>{{this.Abbrev}}</td></tr>
+              {{/each}}
+            </tbody>
+          </table>
+          </div> <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Country Names &amp; Abbreviations</h5>
+          <div class="table-responsive">
+          <table class="table table-sm table-striped table-bordered table-hover" id="countriestable">
+            <caption>List of Countries and their three-character abbreviations</caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Abbrev</th>
+              </tr>
+            </thead>
+            <tbody id="countrydata">
+              {{#each data.countryresults}}
+                <tr><td>{{this.Name}}</td><td>{{this.Abbrev}}</td></tr>
+              {{/each}}
+            </tbody>
+          </table>
+          </div> <!-- table-responsive -->
+        </div>  <!-- card-body -->
+      </div>  <!-- card -->
+    </div>  <!-- col-sm -->
+
+    <div class="col-sm">
+      <div class="card">
         <div class="card-body">
           <h5 class="card-title">North American Tracks</h5>
           <div class="table-responsive">
-            <table class="table table-striped table-bordered table-hover" id="natrackstable">
+            <table class="table table-sm table-striped table-bordered table-hover" id="natrackstable">
               <caption>Thoroughbred race tracks on the North American continent</caption>
               <thead>
                 <tr>
@@ -55,57 +99,4 @@
     </div>  <!-- col-sm -->
   </div>  <!-- row -->
 
-  <div class="row">
-    <div class="col-sm">
-      <div class="card">
-        <div class="card-header">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Canadian Provinces &amp; Codes</h5>
-          <div class="table-responsive">
-	        <table class="table table-striped table-bordered table-hover" id="provincestable">
-	          <caption>List of Canadian provinces and their two-character abbreviations</caption>
-	          <thead>
-	            <tr>
-	              <th scope="col">Name</th>
-	              <th scope="col">Code</th>
-	            </tr>
-	          </thead>
-	          <tbody id="provincedata">
-	            {{#each data.provinceresults}}
-	              <tr><td>{{this.Name}}</td><td>{{this.Abbrev}}</td></tr>
-	            {{/each}}
-	          </tbody>
-	        </table>
-          </div> <!-- table-responsive -->
-        </div>  <!-- card-body -->
-      </div>  <!-- card -->
-    </div>  <!-- col-sm -->
-
-    <div class="col-sm">
-      <div class="card">
-        <div class="card-header">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Country Names &amp; Abbreviations</h5>
-          <div class="table-responsive">
-	        <table class="table table-striped table-bordered table-hover" id="countriestable">
-	          <caption>List of Countries and their three-character abbreviations</caption>
-	          <thead>
-	            <tr>
-	              <th scope="col">Name</th>
-	              <th scope="col">Abbrev</th>
-	            </tr>
-	          </thead>
-	          <tbody id="countrydata">
-	            {{#each data.countryresults}}
-	              <tr><td>{{this.Name}}</td><td>{{this.Abbrev}}</td></tr>
-	            {{/each}}
-	          </tbody>
-	        </table>
-          </div> <!-- table-responsive -->
-        </div>  <!-- card-body -->
-      </div>  <!-- card -->
-    </div>  <!-- col-sm -->
-  </div> <!-- row -->
 </div>  <!-- container -->

@@ -1,5 +1,7 @@
 // This script contains routes for all of the Formulator 4 database operations
 
+"use strict";
+
 const express = require('express');
 const passport = require('passport');
 const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
@@ -9,7 +11,7 @@ const path= require("path");
 const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
 
-db = require( __dirname + "/../app/models" );
+let db = require( __dirname + "/../app/models" );
 
 // AGE CODES
 // Retrieve all of the rows from the small AgeCodes table

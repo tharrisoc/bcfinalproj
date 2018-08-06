@@ -1,7 +1,11 @@
+"use strict";
+
 $(document).ready(readyFunc);
 
 function readyFunc() {
 console.log("Enter readyFunc()");  // TWH DEBUG
+
+// leave this here for now as an example of how to write code of this type
 /*
   $("#geogtables").on( "click", populateGeogTables);
   $("#absymtables").on("click", populateAbbrevTables);
