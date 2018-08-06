@@ -25,18 +25,16 @@
         <style type="text/css">
           /* rrtabletest.handlebars*/
           .rrvhead {
-            font-size: 8px;
+              font-size: 8px;
           }
 
           .verysmall {
               font-size: 8px;
           }
 
-/*
-          #home-text-div {
-              margin-top: -1rem;
-              padding-top: 0;
-              border: red solid 1px; */
+          #racetrackselect, .fixedpitchoption {
+              font-family: monospace;
+              font-size: small;
           }
 
           @media (max-width: 575px) {
@@ -59,7 +57,7 @@
               .home-text { font-size: 1.00rem; margin-bottom: 0.60rem; line-height: 1.16rem; }
           }
 
-          /* (needs additional code) */
+          /* (needs additional code)
           .carousel-control-next-icon:after {
             color: red;
           }
@@ -67,50 +65,7 @@
           .carousel-control-prev-icon:after {
             color: red;
           }
-
-/*			
-			body {
-				background-color: snow;
-			}
-			
-			#wrapper {
-				margin: 0 auto;
-				width: 875px;
-			}
-
-			#temptext {
-				position: absolute;
-				top: 120px;
-				left: 60px;
-				right: 100px;
-				width: 80%;
-				white-space:nowrap;
-			}
-
-			.placeholdertext {
-				font-size: large;
-				font-weight: 900;
-				margin-left: 110px;
-				margin-right: 100px;
-				color: #000066;
-				opacity 1.0;
-			}
-
-			#horseimage {
-				position: absolute;
-				left: 120px;
-				
-				top:80px;
-				right:60px;
-				width:auto;
-			}
-			
-			#picfile {
-				width: 810px;
-				height: 400px;
-				opacity: .40;
-			}
-*/
+          */
 
        </style>
         
@@ -142,17 +97,17 @@
                 <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Data Upload
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="/htmlroutes/dataupload">File Upload Dialog</a>
                   <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Database
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -162,7 +117,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Handicapping Method
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -172,7 +127,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   ANN Algorithm
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -182,7 +137,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Training
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -192,7 +147,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Prediction
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

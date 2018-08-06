@@ -1,4 +1,4 @@
-// This script serves html pages through handlebars templates
+// This script serves html pages via handlebars templates
 
 "use strict";
 
@@ -13,6 +13,18 @@ const Op = Sequelize.Op;
 
 let db = require( __dirname + "/../app/models" );
 
+// A GET route for displaying the data upload dialog box
+router.get('/dataupload', ensureLoggedIn, function(req, res, next) {
+  let data = {};
+  db.NorthAmericanTracks.findAll({}).then(function(results) {
+    data.tracksresults = results;
+    let newList = equalizeTracks(data);
+    data.tracksresults = newList;
+    res.render('UploadDialog.handlebars',  
+               { 'webPageTitle': 'Data Upload Dialog', data: data } );
+  });  
+});
+  
 router.get('/abbrevs', ensureLoggedIn, function(req, res, next) {
   let data = {};
   db.AgeCodes.findAll({}).then(function(results) {
@@ -85,28 +97,48 @@ router.get('/locations', ensureLoggedIn, function(req, res, next) {
   });
 });
 
+// Give all of the TrackCodes a length of 3, and all of the Track Longnames
+// the length of the longest Longname. This is done in order to attempt to
+// display the data in columns in the <select> element.
+function equalizeTracks(data) {
+  let list = data.tracksresults;
+  let maxLen = 0;
+  let curLen;
+  let curName;
+  let curCode;
+  let lenDiff;
+  const spaces = "                                   ";
 /*
+  const spaces = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                 "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                 "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+                 "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; */
 
+  // list is an array of objects
+  const numTracks = list.length;
+  
+  for (let i = 0; i < numTracks; i++) {
+    curLen = list[i].LongName.length;
+    if (curLen > maxLen) maxLen = curLen;
+  }
 
-// WORKOUT SYMBOLS
-// Retrieve all of the rows from the small WorkoutSymbols table
-router.get('/workoutsymbols', ensureLoggedIn, function(req, res, next) {
-    db.WorkoutSymbols.findAll({}).then(function(results) {
-        res.json(results);
-    });
-});
+  for (let i = 0; i < numTracks; i++) {
+    curName = list[i].LongName;
+    curLen  = curName.length;
+    if (curLen < maxLen) {
+      lenDiff = maxLen - curLen;
+      curName = curName + spaces.substr(0, lenDiff);
+      list[i].LongName = curName;
+    }
 
-// Retrieve one row from the small WorkoutSymbols table
-router.get('/workoutsymbols/:Symbol', ensureLoggedIn, function(req, res, next) {
-    db.WorkoutSymbols.findOne({
-        where: {
-            Symbol: req.params.Symbol
-          }
-    }).then(function(results) {
-        res.json(results);
-    });
-});
+    curCode = list[i].TrackCode;
+    if (curCode.length < 3) {
+      curCode = curCode + ' ';
+      list[i].TrackCode = curCode;
+    }
+  }
 
-*/
+  return list;
+}
 
 module.exports = router;
